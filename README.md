@@ -8,7 +8,7 @@ My public work sits between mathematics, machine learning, and systems for study
 
 - **Collective behavior and multi-agent coordination** with Prof. Edgar Andrade-Lotero: spectral and graph-theoretic analysis of self-organized division of cognitive labor, connected to broader PsyNet-based behavioral experimentation.
 - **Supply-chain resilience as a learned capability** with Prof. Alexander Garrido: reinforcement learning over discrete-event simulations of disruption; manuscript in preparation.
-- **NeuroAI preparation**: incoming participant in Neuromatch Academy 2026, NeuroAI track.
+- **NeuroAI preparation**: Neuromatch Academy 2026 NeuroAI track participant.
 
 I keep collaborative or private research material out of public repositories unless it has been cleared for release. The projects below are the public artifacts I currently use as my research and software portfolio.
 
