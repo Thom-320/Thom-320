@@ -1,5 +1,9 @@
 # Thomas Chisica
 
+![spectral-cognitive-labor CI](https://img.shields.io/github/actions/workflow/status/Thom-320/spectral-cognitive-labor/ci.yml?branch=main&label=spectral%20CI)
+![scres-ia CI](https://img.shields.io/github/actions/workflow/status/Thom-320/scres-ia/ci.yml?branch=main&label=scres%20CI)
+![HeliOS CI](https://img.shields.io/github/actions/workflow/status/Thom-320/HeliOS/build.yml?branch=main&label=HeliOS%20CI)
+
 Undergraduate in **Applied Mathematics & Computer Science** at Universidad del Rosario (Bogotá, Colombia), on a national merit scholarship. I am working toward a research career in **NeuroAI** and **computational neuroscience** — at the intersection of **reinforcement learning**, **collective behavior**, and **computational models of coordination under uncertainty**, with current work moving toward the **Free Energy Principle / Active Inference**.
 
 My work sits between mathematics, machine learning, and the study of how agents — biological or artificial — coordinate and adapt under uncertainty. I try to keep what I build reproducible, honestly scoped, and grounded in theory.
