@@ -1,33 +1,57 @@
 # Thomas Chisica
 
-![spectral-cognitive-labor CI](https://img.shields.io/github/actions/workflow/status/Thom-320/spectral-cognitive-labor/ci.yml?branch=main&label=spectral%20CI)
-![scres-ia CI](https://img.shields.io/github/actions/workflow/status/Thom-320/scres-ia/ci.yml?branch=main&label=scres%20CI)
-![HeliOS CI](https://img.shields.io/github/actions/workflow/status/Thom-320/HeliOS/build.yml?branch=main&label=HeliOS%20CI)
+I am an undergraduate in **Applied Mathematics and Computer Science** at
+**Universidad del Rosario** in Bogota, Colombia, supported by a national merit
+scholarship. I am preparing for a research career in **computational
+neuroscience** and **NeuroAI**, with interests in learning, adaptive behavior,
+reinforcement learning, network science, and dynamical systems.
 
-Undergraduate in **Applied Mathematics & Computer Science** at Universidad del Rosario (Bogotá, Colombia), on a national merit scholarship. I am working toward a research career in **NeuroAI** and **computational neuroscience** — at the intersection of **reinforcement learning**, **collective behavior**, and **computational models of coordination under uncertainty**, with current work moving toward the **Free Energy Principle / Active Inference**.
+I build computational models and research software for studying how biological
+and artificial agents learn, coordinate, and make decisions under uncertainty.
+My priority is not just predictive performance: I care about reproducibility,
+identifiability, meaningful controls, and claims that remain honest under audit.
 
-My work sits between mathematics, machine learning, and the study of how agents — biological or artificial — coordinate and adapt under uncertainty. I try to keep what I build reproducible, honestly scoped, and grounded in theory.
+## Current work
 
-## Research
+- **Neuromatch Academy Computational Neuroscience 2026:** investigating
+  connectivity and behavior in motor recurrent neural networks using paired
+  held-out evaluation and explicit interpretation boundaries.
+- **Supply-chain resilience:** developing discrete-event simulations and
+  decision-policy evaluations while auditing what information and intervention
+  rights are required for adaptive policies to improve over strong baselines.
+- **Collective behavior:** using spectral graph methods to study the emergence
+  of coordinated specialization in behavioral experiments.
 
-- **Collective behavior & multi-agent coordination** with Prof. Edgar Andrade-Lotero (UC Davis) — behavioral experiments built on PsyNet, and a spectral / graph-theoretic reanalysis of self-organized division of cognitive labor. A geometric signal computed from the first five shared rounds predicts later axial specialization (**AUC_LOOCV = 0.86** when combined with early behavioral metrics; see [spectral-cognitive-labor](https://github.com/Thom-320/spectral-cognitive-labor)).
-- **Supply-chain resilience as a learned capability** with Prof. Alexander Garrido — PPO-based reinforcement learning over discrete-event simulations of disruption. PPO outperforms the best static policy under severe + stochastic disruption (**500k timesteps × 5 seeds**, frozen benchmark backbone; manuscript in preparation — see [scres-ia](https://github.com/Thom-320/scres-ia)).
-- Incoming participant — **Neuromatch Academy 2026, NeuroAI track**.
+## Selected repositories
 
-## Selected projects
-
-| Project | Summary |
+| Repository | Focus |
 | --- | --- |
-| [**scres-ia**](https://github.com/Thom-320/scres-ia) | Hybrid discrete-event simulation + reinforcement-learning framework for supply-chain resilience research (500k × 5 seeds PPO benchmark, frozen defaults). |
-| [**spectral-cognitive-labor**](https://github.com/Thom-320/spectral-cognitive-labor) | Symmetry-aware spectral graph reanalysis of a division-of-cognitive-labor experiment, with reproducible metrics (early geometric signal: AUC_LOOCV = 0.86). |
-| [**HeliOS**](https://github.com/Thom-320/HeliOS) | Educational RISC-V 64 kernel: QEMU boot, scheduling, timer interrupts, synchronization, and CI smoke tests. |
+| [**nma-motor-rnn-connectivity**](https://github.com/Thom-320/nma-motor-rnn-connectivity) | Active Neuromatch project on motor-RNN connectivity, with reproducible notebooks and paired held-out evaluation. |
+| [**scres-ia**](https://github.com/Thom-320/scres-ia) | Research framework for supply-chain resilience using discrete-event simulation, optimization, and reinforcement learning. |
+| [**spectral-cognitive-labor**](https://github.com/Thom-320/spectral-cognitive-labor) | Symmetry-aware spectral graph analysis of self-organized division of cognitive labor. |
+| [**HeliOS**](https://github.com/Thom-320/HeliOS) | Educational RISC-V 64 kernel with scheduling, interrupts, synchronization, a shell, and CI smoke tests. |
+| [**secop-risk-alerts-co**](https://github.com/Thom-320/secop-risk-alerts-co) | Explainable data pipeline and decision-support prototype for Colombian public-procurement data. |
+| [**chaoslab-double-pendulum**](https://github.com/Thom-320/chaoslab-double-pendulum) | Numerical study and interactive visualization of classical chaos in a double pendulum. |
 
-## Technical background
+## Research practice
 
-Python · PyTorch · Gymnasium / Stable-Baselines3 · NumPy / SciPy · SimPy · NetworkX · C · LaTeX · reproducible pipelines (Make, pytest, CI)
+- Reproducible environments, automated tests, and machine-readable artifacts.
+- Held-out evaluation, preregistered gates, strong baselines, and explicit
+  stopping rules.
+- Clear separation between observations, inferences, and proposed mechanisms.
+- Null results and failed gates treated as informative scientific outcomes.
+
+## Technical toolkit
+
+**Research:** Python, PyTorch, NumPy, SciPy, pandas, NetworkX, SimPy,
+Gymnasium, Stable-Baselines3, Jupyter, LaTeX, Quarto
+
+**Engineering:** C, SQL, FastAPI, Docker, Git, pytest, GitHub Actions, Linux
 
 ## Contact
 
-- Bogotá, Colombia
-- Academic: [thomas.chisica@urosario.edu.co](mailto:thomas.chisica@urosario.edu.co)
-- Personal: [chisicathomas@gmail.com](mailto:chisicathomas@gmail.com)
+- Bogota, Colombia
+- [thomas.chisica@urosario.edu.co](mailto:thomas.chisica@urosario.edu.co)
+
+I am open to research collaborations, internships, and conversations about
+computational neuroscience, NeuroAI, and rigorous computational modeling.
