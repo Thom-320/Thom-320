@@ -27,13 +27,15 @@ When a result changes under stronger controls, I investigate why.
 
 ### [SCRES · Supply-chain simulation and control](https://github.com/Thom-320/scres-ia)
 
-With **Alexander Garrido**, I work on discrete-event supply-chain models and
-decision policies. I rebuilt a thirteen-operation model in Python and compared
-learned controllers with structured baselines. Those stronger comparisons did
-not support the initial advantage of the learned controller. I revised the claim.
-The experiments include stochastic processing times, held-out random streams,
-and retained-versus-reset comparisons across sequential disruption cycles.
-I maintain automated tests, evaluation scripts, and versioned results.
+With **Alexander Garrido**, I test whether learned control improves supply-chain
+resilience under disruptions. I reconstructed a thirteen-operation model in
+SimPy and built Gymnasium environments and PyTorch/PPO experiments.
+
+I gave static comparators the same decision options as PPO, separating calibration
+from held-out evaluation. Across 60 test runs and 10 PPO checkpoints, the stronger
+static comparator overturned the apparent learning advantage. I also tested
+retained-versus-reset online adaptation and maintain automated tests,
+source-model checks, and reproducible experiment records.
 
 *Python · SimPy · Gymnasium · PyTorch · reproducible experiments*
 
@@ -65,26 +67,34 @@ density trend did not recur.
 | Project | What I worked on |
 | :--- | :--- |
 | [HeliOS](https://github.com/Thom-320/HeliOS) | Contributions to a collaborative educational RISC-V kernel in C. |
-| [ChaosLab](https://github.com/Thom-320/chaoslab-double-pendulum) | An interactive double-pendulum simulation for exploring nonlinear dynamics. |
-| [ContratIA Abierta](https://github.com/Thom-320/secop-risk-alerts-co) | Data pipelines and decision support using Colombian public-procurement data. |
+| [ChaosLab](https://github.com/Thom-320/chaoslab-double-pendulum) | Python/Streamlit double-pendulum simulation with energy checks, phase-space trajectories, and flip-time maps. |
 
 [![Spectral Cognitive Labor CI](https://img.shields.io/github/actions/workflow/status/Thom-320/spectral-cognitive-labor/ci.yml?branch=main&label=Spectral%20CI&style=flat-square)](https://github.com/Thom-320/spectral-cognitive-labor/actions)
 [![HeliOS CI](https://img.shields.io/github/actions/workflow/status/Thom-320/HeliOS/build.yml?branch=main&label=HeliOS%20CI&style=flat-square)](https://github.com/Thom-320/HeliOS/actions)
 
 ## Research & experience
 
-Separately, I work with **Edgar Andrade-Lotero** and other team members on a
-UC Davis collective-behaviour project. Andrade is a Universidad del Rosario
-professor and a postdoctoral researcher at UC Davis.
+With **Edgar Andrade-Lotero** at Universidad del Rosario, in a UC Davis
+collaboration, I contribute to **Foragers**: research on resource-sharing rules,
+fairness, and collective outcomes, including group survival under scarcity.
+I implemented the Gymnasium simulation's investment, allocation, harvest, and
+redistribution pipeline, with a wealth-minus-inequality reward and tests of
+rewards, state bounds, termination, and full episodes.
 
-I also collaborate with **Adriana Maldonado-Chaparro** on computational models
-of animal social networks, including reproducibility checks and observational
-data preparation. That work is not publicly shared.
+With **Adriana Maldonado-Chaparro**, I audit models of marmot social networks.
+I traced agent–string comparisons that collapsed distinct homophily conditions,
+using a Python reference implementation and NetLogo 5.2 smoke tests across
+240 model-condition runs. I also built provisional dyadic tables linking
+interactions, eligibility, and observation effort. Annual group membership alone
+does not establish simultaneous availability or partner preference.
 
-At **Digital Business Ventures**, I built a retrieval-based customer-support
-chatbot for Witty, with heuristic rules for escalating questions to a person.
-The code remains private. I also served as a **Calculus I teaching assistant**
-at Universidad del Rosario.
+As **Lead in Emerging Technologies at Digital Business Ventures** (June–December
+2025), I built Witty's support-email knowledge pipeline and an LLM-based chatbot
+using FastAPI, FAISS, and multi-provider embeddings, with heuristic
+answer-or-escalate routing. The code remains private.
+
+I also served as a **Calculus I teaching assistant** at Universidad del Rosario
+from July 2024 to July 2025.
 
 ## Tools I use
 
@@ -96,3 +106,4 @@ at Universidad del Rosario.
 
 I'm looking for research internships and collaborations in learning systems,
 computational neuroscience, and reliable AI. [Email me](mailto:thomas.chisica@urosario.edu.co).
+You can also reach me at [chisicathomas@gmail.com](mailto:chisicathomas@gmail.com).
