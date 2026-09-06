@@ -2,7 +2,9 @@
 
 **Applied Mathematics & Computer Science · Universidad del Rosario · Bogotá, Colombia**
 
-[Academic CV](https://github.com/Thom-320/Thom-320/blob/main/Thomas_Chisica_CV.pdf) · [Email](mailto:thomas.chisica@urosario.edu.co) · [Repositories](https://github.com/Thom-320?tab=repositories)
+[![Academic CV](https://img.shields.io/badge/Academic_CV-PDF-1f6feb?style=flat-square&logo=readthedocs&logoColor=white)](https://github.com/Thom-320/Thom-320/blob/main/Thomas_Chisica_CV.pdf)
+[![Email](https://img.shields.io/badge/Email-Contact-334155?style=flat-square&logo=minutemailer&logoColor=white)](mailto:thomas.chisica@urosario.edu.co)
+[![GitHub repositories](https://img.shields.io/badge/GitHub-Repositories-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/Thom-320?tab=repositories)
 
 I study how people and learning systems adapt, coordinate, and make decisions.
 My work brings together reinforcement learning, computational neuroscience,
@@ -13,6 +15,15 @@ that it actually works?** I build simulations, compare methods, and investigate
 results that change when the controls get stronger.
 
 ## Selected research
+
+| Project | Research focus |
+| :--- | :--- |
+| [**SCRES**](https://github.com/Thom-320/scres-ia) | Supply-chain simulation and control. Learned policies, structured baselines, and reproducible comparisons. |
+| [**Spectral Cognitive Labor**](https://github.com/Thom-320/spectral-cognitive-labor) | Human collective search. Spectral graph methods, task symmetries, and division of the search space. |
+| [**Motor RNNs**](https://github.com/Thom-320/nma-motor-rnn-connectivity) | Recurrent connectivity and learning. A Neuromatch team project with an independent fixed-plasticity follow-up. |
+
+<details>
+<summary><strong>My contributions and what the experiments showed</strong></summary>
 
 ### [SCRES · Supply-chain simulation and control](https://github.com/Thom-320/scres-ia)
 
@@ -42,13 +53,20 @@ not recur under that control.
 
 *Recurrent networks · PyTorch · experimental controls*
 
-## Beyond those projects
+</details>
+
+## More projects
 
 | Project | What I worked on |
 | :--- | :--- |
 | [HeliOS](https://github.com/Thom-320/HeliOS) | Contributions to a collaborative educational RISC-V kernel in C. |
 | [ChaosLab](https://github.com/Thom-320/chaoslab-double-pendulum) | An interactive double-pendulum simulation for exploring nonlinear dynamics. |
 | [ContratIA Abierta](https://github.com/Thom-320/secop-risk-alerts-co) | Data pipelines and decision support using Colombian public-procurement data. |
+
+[![Spectral Cognitive Labor CI](https://img.shields.io/github/actions/workflow/status/Thom-320/spectral-cognitive-labor/ci.yml?branch=main&label=Spectral%20CI&style=flat-square)](https://github.com/Thom-320/spectral-cognitive-labor/actions)
+[![HeliOS CI](https://img.shields.io/github/actions/workflow/status/Thom-320/HeliOS/build.yml?branch=main&label=HeliOS%20CI&style=flat-square)](https://github.com/Thom-320/HeliOS/actions)
+
+## Research & experience
 
 I also collaborate with **Adriana Maldonado-Chaparro** on computational models
 of animal social networks, including reproducibility checks and observational
