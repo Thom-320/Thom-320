@@ -28,15 +28,6 @@ out why a promising result changes under better controls.
 [![Spectral Cognitive Labor CI](https://img.shields.io/github/actions/workflow/status/Thom-320/spectral-cognitive-labor/ci.yml?branch=main&label=Spectral%20CI&style=flat-square)](https://github.com/Thom-320/spectral-cognitive-labor/actions)
 [![HeliOS CI](https://img.shields.io/github/actions/workflow/status/Thom-320/HeliOS/build.yml?branch=main&label=HeliOS%20CI&style=flat-square)](https://github.com/Thom-320/HeliOS/actions)
 
-## How I work
-
-I use held-out evaluation, automated tests, and reproducible experiments to
-check what a model actually establishes. In SCRES, giving a stronger static
-policy the same decision options as PPO overturned the apparent learning
-advantage in that comparison. The
-[experiment and verdict](https://github.com/Thom-320/scres-ia/blob/main/docs/TRACK_B_SAME_CONTRACT_CHALLENGE_VERDICT_2026-07-10.md)
-are public, including the result that did not support the original claim.
-
 ## Tools I use
 
 **Modelling & analysis:** Python, PyTorch, NumPy, SciPy, NetworkX, SimPy, Gymnasium, R.
