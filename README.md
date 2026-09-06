@@ -31,15 +31,20 @@ With **Alexander Garrido**, I work on discrete-event supply-chain models and
 decision policies. I rebuilt a thirteen-operation model in Python and compared
 learned controllers with structured baselines. Those stronger comparisons did
 not support the initial advantage of the learned controller. I revised the claim.
+The experiments include stochastic processing times, held-out random streams,
+and retained-versus-reset comparisons across sequential disruption cycles.
+I maintain automated tests, evaluation scripts, and versioned results.
 
 *Python · SimPy · Gymnasium · PyTorch · reproducible experiments*
 
 ### [Spectral Cognitive Labor · Collective search](https://github.com/Thom-320/spectral-cognitive-labor)
 
-With **Edgar Andrade-Lotero**, I study coordination in human collective search.
-In an independent reanalysis, I used spectral graph methods to account for task
-symmetries and compare how people divide the search space. The repository
-includes code, figures, tests, and a discussion of the analysis's limitations.
+This is my **independent reanalysis** of public human collective-search data,
+not a contribution to the original experiment. I identified a degenerate
+Fiedler eigenspace and compared human partitions with symmetry-aware references.
+Early predictors were evaluated with leave-one-out cross-validation on 29 dyads
+(exploratory AUC: 0.804 geometric; 0.860 combined). The repository includes
+reproducible code, result tables, figures, and methodological limitations.
 
 *Spectral graph theory · NetworkX · statistical analysis*
 
@@ -67,6 +72,10 @@ density trend did not recur.
 [![HeliOS CI](https://img.shields.io/github/actions/workflow/status/Thom-320/HeliOS/build.yml?branch=main&label=HeliOS%20CI&style=flat-square)](https://github.com/Thom-320/HeliOS/actions)
 
 ## Research & experience
+
+Separately, I work with **Edgar Andrade-Lotero** and other team members on a
+UC Davis collective-behaviour project. Andrade is a Universidad del Rosario
+professor and a postdoctoral researcher at UC Davis.
 
 I also collaborate with **Adriana Maldonado-Chaparro** on computational models
 of animal social networks, including reproducibility checks and observational
