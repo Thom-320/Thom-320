@@ -1,63 +1,71 @@
-# Thomas Chisica
+# Thomas Chisica Londoño
 
-![spectral-cognitive-labor CI](https://img.shields.io/github/actions/workflow/status/Thom-320/spectral-cognitive-labor/ci.yml?branch=main&label=spectral%20CI)
-![HeliOS CI](https://img.shields.io/github/actions/workflow/status/Thom-320/HeliOS/build.yml?branch=main&label=HeliOS%20CI)
+**Applied Mathematics & Computer Science · Universidad del Rosario · Bogotá, Colombia**
 
-I am an undergraduate in **Applied Mathematics and Computer Science** at
-**Universidad del Rosario** in Bogota, Colombia, supported by a national merit
-scholarship. I am preparing for a research career in **computational
-neuroscience** and **NeuroAI**, with interests in learning, adaptive behavior,
-reinforcement learning, network science, and dynamical systems.
+[Academic CV](https://github.com/Thom-320/Thom-320/blob/main/Thomas_Chisica_CV.pdf) · [Email](mailto:thomas.chisica@urosario.edu.co) · [Repositories](https://github.com/Thom-320?tab=repositories)
 
-I build computational models and research software for studying how biological
-and artificial agents learn, coordinate, and make decisions under uncertainty.
-My priority is not just predictive performance: I care about reproducibility,
-identifiability, meaningful controls, and claims that remain honest under audit.
+I study how people and learning systems adapt, coordinate, and make decisions.
+My work brings together reinforcement learning, computational neuroscience,
+and mathematical modelling. I am also interested in reliable LLM-based systems.
 
-## Current research
+Most of my projects start with a model and a question: **what would convince us
+that it actually works?** I build simulations, compare methods, and investigate
+results that change when the controls get stronger.
 
-- **Computational neuroscience:** Neuromatch Academy 2026, Computational
-  Neuroscience track. I am investigating connectivity and behavior in motor
-  recurrent neural networks using paired held-out evaluation.
-- **Supply-chain resilience** with Prof. Alexander Garrido at Universidad del
-  Rosario. I develop discrete-event simulations and decision-policy evaluations
-  while auditing the information and intervention rights required for adaptive
-  policies to improve over strong baselines.
-- **Collective behavior and coordination** with Prof. Edgar Andrade-Lotero at
-  Universidad del Rosario / UC Davis. I use behavioral experiments, network
-  science, and symmetry-aware spectral methods to study coordinated
-  specialization.
+## Selected research
 
-## Selected repositories
+### [SCRES · Supply-chain simulation and control](https://github.com/Thom-320/scres-ia)
 
-| Repository | Focus |
-| --- | --- |
-| [**nma-motor-rnn-connectivity**](https://github.com/Thom-320/nma-motor-rnn-connectivity) | Active Neuromatch project on motor-RNN connectivity, with reproducible notebooks and paired held-out evaluation. |
-| [**scres-ia**](https://github.com/Thom-320/scres-ia) | Claim-audited research framework for supply-chain resilience using discrete-event simulation, optimization, and reinforcement learning. |
-| [**spectral-cognitive-labor**](https://github.com/Thom-320/spectral-cognitive-labor) | Symmetry-aware spectral graph analysis of self-organized division of cognitive labor. |
-| [**HeliOS**](https://github.com/Thom-320/HeliOS) | Educational RISC-V 64 kernel with scheduling, interrupts, synchronization, a shell, and CI smoke tests. |
-| [**secop-risk-alerts-co**](https://github.com/Thom-320/secop-risk-alerts-co) | Explainable data pipeline and deployed decision-support prototype for Colombian public-procurement data. |
-| [**chaoslab-double-pendulum**](https://github.com/Thom-320/chaoslab-double-pendulum) | Numerical study and interactive visualization of classical chaos in a double pendulum. |
+With **Alexander Garrido**, I work on discrete-event supply-chain models and
+decision policies. I rebuilt a thirteen-operation model in Python and compared
+learned controllers with structured baselines. Stronger comparisons did not
+support the initial advantage, so the interpretation had to change.
 
-## Research practice
+*Python · SimPy · Gymnasium · PyTorch · reproducible experiments*
 
-- Reproducible environments, automated tests, and machine-readable artifacts.
-- Held-out evaluation, preregistered gates, strong baselines, and explicit
-  stopping rules.
-- Clear separation between observations, inferences, and proposed mechanisms.
-- Null results and failed gates treated as informative scientific outcomes.
+### [Spectral Cognitive Labor · Collective search](https://github.com/Thom-320/spectral-cognitive-labor)
 
-## Technical toolkit
+With **Edgar Andrade-Lotero**, I study coordination in human collective search.
+My independent reanalysis uses spectral graph methods to account for symmetries
+in the task and compare how people divide the search space. The repository
+includes code, figures, tests, and the limits of the analysis.
 
-**Research:** Python, PyTorch, NumPy, SciPy, pandas, NetworkX, SimPy,
-Gymnasium, Stable-Baselines3, Jupyter, LaTeX, Quarto
+*Spectral graph theory · NetworkX · statistical analysis*
 
-**Engineering:** C, SQL, FastAPI, Docker, Git, pytest, GitHub Actions, Linux
+### [Motor RNNs · Connectivity and learning](https://github.com/Thom-320/nma-motor-rnn-connectivity)
 
-## Contact
+A **Neuromatch Academy Computational Neuroscience** team project and independent
+follow-up. I examined recurrent connectivity with paired seeds and held-out
+evaluation. After noticing that density also changed the number of trainable
+weights, I tested a fixed-plasticity control; the original density trend did
+not recur under that control.
 
-- Bogota, Colombia
-- [thomas.chisica@urosario.edu.co](mailto:thomas.chisica@urosario.edu.co)
+*Recurrent networks · PyTorch · experimental controls*
 
-I am open to research collaborations, internships, and conversations about
-computational neuroscience, NeuroAI, and rigorous computational modeling.
+## Beyond those projects
+
+| Project | What I worked on |
+| :--- | :--- |
+| [HeliOS](https://github.com/Thom-320/HeliOS) | Contributions to a collaborative educational RISC-V kernel in C. |
+| [ChaosLab](https://github.com/Thom-320/chaoslab-double-pendulum) | An interactive double-pendulum simulation for exploring nonlinear dynamics. |
+| [ContratIA Abierta](https://github.com/Thom-320/secop-risk-alerts-co) | Data pipelines and decision support using Colombian public-procurement data. |
+
+I also collaborate with **Adriana Maldonado-Chaparro** on computational models
+of animal social networks, including reproducibility checks and observational
+data preparation. That work is not publicly shared.
+
+Previously, I worked at **Digital Business Ventures** on Witty, building a
+retrieval-based customer-support chatbot with heuristic human escalation.
+The code remains private. I also served as a **Calculus I teaching assistant**
+at Universidad del Rosario.
+
+## Tools I use
+
+**Modelling & analysis:** Python, PyTorch, NumPy, SciPy, NetworkX, SimPy, Gymnasium, R.
+
+**Software:** C, SQL, FastAPI, Git, pytest, Linux, LaTeX.
+
+---
+
+Interested in research collaborations and internships in learning systems,
+computational neuroscience, and reliable AI? [Get in touch](mailto:thomas.chisica@urosario.edu.co).
