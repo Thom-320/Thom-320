@@ -1,44 +1,35 @@
 # Thomas Chisica Londoño
 
-**Applied Mathematics & Computer Science · Universidad del Rosario · Bogotá, Colombia**
+Applied Mathematics & Computer Science undergraduate at **Universidad del Rosario**, Bogotá.
 
-[![Academic CV](https://img.shields.io/badge/Academic_CV-PDF-1f6feb?style=flat-square&logo=readthedocs&logoColor=white)](https://github.com/Thom-320/Thom-320/blob/main/Thomas_Chisica_CV.pdf)
-[![Email](https://img.shields.io/badge/Email-Contact-334155?style=flat-square&logo=minutemailer&logoColor=white)](mailto:thomas.chisica@urosario.edu.co)
-[![GitHub repositories](https://img.shields.io/badge/GitHub-Repositories-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/Thom-320?tab=repositories)
+I study how people and artificial agents learn, coordinate and make decisions.
+I build simulations and research software, with interests in reinforcement
+learning, computational neuroscience and reliable evaluation. I especially enjoy
+the part where a promising result has to survive a better comparison.
 
-I'm an undergraduate interested in how people and artificial agents learn,
-coordinate, and make decisions. Here you'll find my work on recurrent networks,
-collective search, and reinforcement learning, alongside systems programming
-and simulation projects.
+[CV (PDF)](Thomas_Chisica_CV.pdf) · [University email](mailto:thomas.chisica@urosario.edu.co) · [Project guide](PROJECTS.md)
 
-My interests span **computational neuroscience, NeuroAI, reinforcement learning,
-and reliable AI**. I like building models, testing their assumptions, and figuring
-out why a promising result changes under better controls.
+## Research: start here
 
-## Selected projects
+| Project | My work and what to inspect |
+| --- | --- |
+| [**SCRES: simulation and reinforcement learning**](https://github.com/Thom-320/scres-ia) | Research with Alexander Garrido: supply-chain simulation, Gymnasium/PPO experiments and matched-comparator evaluation. Start with the [same-contract comparison](https://github.com/Thom-320/scres-ia/blob/main/docs/TRACK_B_SAME_CONTRACT_CHALLENGE_VERDICT_2026-07-10.md). |
+| [**Motor-RNN connectivity**](https://github.com/Thom-320/nma-motor-rnn-connectivity) | Neuromatch Computational Neuroscience team project, followed by my independent equal-plasticity control. The [control note](https://github.com/Thom-320/nma-motor-rnn-connectivity/blob/main/docs/EQUAL_PLASTICITY_CONTROL.md) separates structural density from trainable connections. |
+| [**Spectral analysis of cognitive labor**](https://github.com/Thom-320/spectral-cognitive-labor) | My reanalysis of Andrade-Lotero and Goldstone's human-search experiment. The [temporal audit](https://github.com/Thom-320/spectral-cognitive-labor/blob/main/docs/TEMPORAL_REPAIR.md) reconstructs past-only features and compares spectral and coordinate representations; predictive advantage is not established. |
 
-| Project | What you'll find |
-| :--- | :--- |
-| [**SCRES**](https://github.com/Thom-320/scres-ia) | Supply-chain simulations, reinforcement-learning experiments, and comparisons against structured control policies. Research with Alexander Garrido. |
-| [**Spectral Cognitive Labor**](https://github.com/Thom-320/spectral-cognitive-labor) | My independent reanalysis of public human collective-search data using spectral graph methods and symmetry-aware comparisons. |
-| [**Motor RNNs**](https://github.com/Thom-320/nma-motor-rnn-connectivity) | A Neuromatch Computational Neuroscience team project on recurrent connectivity, followed by my independent fixed-plasticity control. |
-| [**HeliOS**](https://github.com/Thom-320/HeliOS) | A collaborative educational RISC-V kernel in C to which I contributed. |
-| [**ChaosLab**](https://github.com/Thom-320/chaoslab-double-pendulum) | An interactive double-pendulum simulation with energy checks, phase-space trajectories, and flip-time maps. |
+## Software and scientific computing
 
-[![Spectral Cognitive Labor CI](https://img.shields.io/github/actions/workflow/status/Thom-320/spectral-cognitive-labor/ci.yml?branch=main&label=Spectral%20CI&style=flat-square)](https://github.com/Thom-320/spectral-cognitive-labor/actions)
-[![HeliOS CI](https://img.shields.io/github/actions/workflow/status/Thom-320/HeliOS/build.yml?branch=main&label=HeliOS%20CI&style=flat-square)](https://github.com/Thom-320/HeliOS/actions)
+- [**HeliOS**](https://github.com/Thom-320/HeliOS): a collaborative educational RISC-V kernel in C to which I contributed; architecture notes and QEMU smoke tests.
+- [**ContratIA Abierta**](https://github.com/Thom-320/secop-risk-alerts-co): open-procurement data pipelines, APIs and traceable signals for human review, not automated allegations.
+- [**ChaosLab**](https://github.com/Thom-320/chaoslab-double-pendulum): a course project on double-pendulum dynamics, numerical checks and interactive explanation.
 
-## Tools I use
+My broader research experience, including work on marmot social networks, is
+described in the CV. Some collaborative materials are private; they are not
+presented here as publicly reproducible results.
 
-**Modelling & analysis:** Python, PyTorch, NumPy, SciPy, NetworkX, SimPy, Gymnasium, R.
+**Tools I use:** Python, PyTorch, NumPy/SciPy, NetworkX, SimPy, Gymnasium, R,
+C, SQL, FastAPI, Git and pytest.
 
-**Software:** C, SQL, FastAPI, Git, pytest, Linux, LaTeX.
-
----
-
-Open to research internships and collaborations in learning systems,
-computational neuroscience, and reliable AI.
-
-[Academic CV](https://github.com/Thom-320/Thom-320/blob/main/Thomas_Chisica_CV.pdf) ·
-[University email](mailto:thomas.chisica@urosario.edu.co) ·
-[Personal email](mailto:chisicathomas@gmail.com)
+The linked PDF is the public distribution copy of my CV. Its editable source
+and version history are maintained separately; this profile is the guide to
+the work, not a second CV.
