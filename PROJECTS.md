@@ -15,6 +15,24 @@ publication list. Repository ownership does not imply sole authorship.
 
 ## Reading the repositories
 
+### Routes through the evidence
+
+- **Reliable agents and evaluation:** start with SCRES for action-matched
+  baselines, then Motor-RNN for a controlled comparison and Spectral for
+  temporal integrity. These demonstrate transferable evaluation methods,
+  not prior LLM alignment or formal-verification results. Witty's private
+  retrieval prototype is described in the [CV](Thomas_Chisica_CV.pdf).
+- **Learning dynamics and NeuroAI:** start with Motor-RNN's NumPy/FORCE/RLS
+  implementation and equal-plasticity control; use ChaosLab for numerical
+  dynamics and Spectral for invariant representations.
+- **Mathematical and scientific ML:** inspect Spectral's projectors and
+  temporal audit, followed by ChaosLab's integration diagnostics. Numerical
+  analysis coursework is described in the CV; it is not an optimisation-theory paper.
+- **Research software:** inspect HeliOS for collaborative systems code and
+  runtime checks, and ContratIA for data pipelines, APIs and traceable review.
+
+### Inspection before execution
+
 1. Read the research question and the stated limitations.
 2. Inspect a saved result and its method, not only a preview image or CI badge.
 3. Follow the documented test or viewing path before launching training or rebuilding datasets.

@@ -2,10 +2,15 @@
 
 Applied Mathematics & Computer Science undergraduate at **Universidad del Rosario**, Bogotá.
 
-I study how people and artificial agents learn, coordinate and make decisions.
-I build simulations and research software, with interests in reinforcement
-learning, computational neuroscience and reliable evaluation. I especially enjoy
-the part where a promising result has to survive a better comparison.
+I build simulations, learning experiments and scientific software, then test
+their claims with strong baselines, held-out evaluation and explicit controls.
+My experience spans reinforcement learning, recurrent networks, spectral
+representations and retrieval-augmented LLM systems. My research interests are
+reasoning agents, optimisation, formal verification and computational neuroscience.
+
+I bring applied mathematics and research engineering together: building an
+experiment is the starting point; understanding what its comparison establishes
+is the research question.
 
 [CV (PDF)](Thomas_Chisica_CV.pdf) · [University email](mailto:thomas.chisica@urosario.edu.co) · [Project guide](PROJECTS.md)
 
@@ -23,9 +28,19 @@ the part where a promising result has to survive a better comparison.
 - [**ContratIA Abierta**](https://github.com/Thom-320/secop-risk-alerts-co): open-procurement data pipelines, APIs and traceable signals for human review, not automated allegations.
 - [**ChaosLab**](https://github.com/Thom-320/chaoslab-double-pendulum): a course project on double-pendulum dynamics, numerical checks and interactive explanation.
 
-My broader research experience, including work on marmot social networks, is
-described in the CV. Some collaborative materials are private; they are not
-presented here as publicly reproducible results.
+## Additional experience (private code)
+
+- **Witty — LLM retrieval systems:** built a professional FastAPI prototype
+  with embeddings, optional FAISS search and LLM rewriting, and heuristic
+  answer/escalate routing. This is retrieval and software-engineering experience,
+  not model fine-tuning or calibrated uncertainty guarantees.
+- **Numerical analysis:** implemented root-finding and quadrature methods in
+  Python with analytical cases and convergence/error checks as coursework.
+- **Marmot social networks:** observation-aware dyadic tables and a NetLogo/R
+  model audit with Python and native-runtime checks, with Adriana Maldonado-Chaparro.
+
+These entries are described in the CV, not offered as public reproductions.
+Private code, collaborator data and professional materials stay private.
 
 **Tools I use:** Python, PyTorch, NumPy/SciPy, NetworkX, SimPy, Gymnasium, R,
 C, SQL, FastAPI, Git and pytest.
