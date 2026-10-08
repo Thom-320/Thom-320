@@ -6,7 +6,7 @@ publication list. Repository ownership does not imply sole authorship.
 
 | Interest | Start with | Evidence to read before running code |
 | --- | --- | --- |
-| Reinforcement learning and fair policy comparison | [SCRES](https://github.com/Thom-320/scres-ia) | [Same-contract verdict](https://github.com/Thom-320/scres-ia/blob/main/docs/TRACK_B_SAME_CONTRACT_CHALLENGE_VERDICT_2026-07-10.md); [later Program Q status](https://github.com/Thom-320/scres-ia/blob/main/docs/PROGRAM_Q_CANONICAL_EVIDENCE_STATUS_2026-08-25.md). Different contracts must not be combined into one headline. |
+| Reinforcement learning and policy comparison | [SCRES](https://github.com/Thom-320/scres-ia) | [Same-contract verdict](https://github.com/Thom-320/scres-ia/blob/main/docs/TRACK_B_SAME_CONTRACT_CHALLENGE_VERDICT_2026-07-10.md); [later Program Q status](https://github.com/Thom-320/scres-ia/blob/main/docs/PROGRAM_Q_CANONICAL_EVIDENCE_STATUS_2026-08-25.md). Different contracts must not be combined into one headline. |
 | Computational neuroscience and experimental controls | [Motor-RNN connectivity](https://github.com/Thom-320/nma-motor-rnn-connectivity) | [Paired design](https://github.com/Thom-320/nma-motor-rnn-connectivity/blob/main/docs/RESEARCH_OVERVIEW.md); [equal-plasticity control](https://github.com/Thom-320/nma-motor-rnn-connectivity/blob/main/docs/EQUAL_PLASTICITY_CONTROL.md). Eight network seeds, not hundreds of independent trials. |
 | Mathematical representations and human coordination | [Spectral cognitive labor](https://github.com/Thom-320/spectral-cognitive-labor) | [Model-free temporal repair](https://github.com/Thom-320/spectral-cognitive-labor/blob/main/docs/TEMPORAL_REPAIR.md). Reanalysis of the original authors' experiment; no established spectral predictive advantage. |
 | Systems programming | [HeliOS](https://github.com/Thom-320/HeliOS) | [Architecture](https://github.com/Thom-320/HeliOS/blob/main/docs/architecture.md); [smoke test](https://github.com/Thom-320/HeliOS/blob/main/scripts/smoke.sh). Collaborative educational kernel. |
@@ -17,19 +17,10 @@ publication list. Repository ownership does not imply sole authorship.
 
 ### Routes through the evidence
 
-- **Reliable agents and evaluation:** start with SCRES for action-matched
-  baselines, then Motor-RNN for a controlled comparison and Spectral for
-  temporal integrity. These demonstrate transferable evaluation methods,
-  not prior LLM alignment or formal-verification results. Witty's private
-  retrieval prototype is described in the [CV](Thomas_Chisica_CV.pdf).
-- **Learning dynamics and NeuroAI:** start with Motor-RNN's NumPy/FORCE/RLS
-  implementation and equal-plasticity control; use ChaosLab for numerical
-  dynamics and Spectral for invariant representations.
-- **Mathematical and scientific ML:** inspect Spectral's projectors and
-  temporal audit, followed by ChaosLab's integration diagnostics. Numerical
-  analysis coursework is described in the CV; it is not an optimisation-theory paper.
-- **Research software:** inspect HeliOS for collaborative systems code and
-  runtime checks, and ContratIA for data pipelines, APIs and traceable review.
+- **Evaluation of learned policies:** start with SCRES for same-contract comparisons, then Motor-RNN for a controlled comparison and Spectral for temporal integrity. These demonstrate transferable evaluation methods, not prior LLM alignment or formal-verification results. A private retrieval-augmented support prototype is described in the CV.
+- **Learning dynamics and NeuroAI:** start with Motor-RNN's NumPy/FORCE/RLS implementation and equal-plasticity control; use ChaosLab for numerical dynamics and Spectral for invariant representations.
+- **Mathematical and scientific ML:** inspect Spectral's projectors and temporal audit, followed by ChaosLab's integration diagnostics. Numerical analysis coursework is described in the CV; it is not an optimisation-theory paper.
+- **Research software:** inspect HeliOS for collaborative systems code and runtime checks, and ContratIA for data pipelines, APIs and traceable review.
 
 ### Inspection before execution
 
@@ -41,4 +32,4 @@ No fresh model fitting is needed to inspect the existing evidence. Computational
 checks establish what they test; they do not by themselves establish novelty,
 causality, scientific validity or deployment safety.
 
-[CV (PDF)](Thomas_Chisica_CV.pdf) · [Back to profile](README.md)
+CV: updated version coming · [Back to profile](README.md)
