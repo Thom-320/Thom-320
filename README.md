@@ -16,27 +16,30 @@ I build simulations and learning experiments, then test what their comparisons
 actually establish: strong baselines, held-out evaluation and explicit controls.
 
 My research question is whether automated judges and monitors measure what they
-claim to measure. Public work so far is on reinforcement learning, recurrent
-networks and human-coordination data. Next, I want to apply the same measurement
-tests to LLM judges and monitors in post-training and multi-agent systems.
-That last sentence is a plan, not a result.
+claim to measure. A pattern I keep running into: when a system is only partly
+observed, absolute levels are often not identified, while comparisons between
+systems can still be. Public work so far is on reinforcement learning, recurrent
+networks and human-coordination data. I am now applying the same tests to LLM
+judges and monitors (AI-safety audits, tutoring feedback) and to the METR
+time-horizon measurements. That work is in progress and not yet public.
 
-**Status:** expected graduation 2028 (date to confirm). No publications yet; one
-manuscript is in preparation and has not been submitted.
+**Status:** expected graduation 2028 (date to confirm). No publications yet. A
+short Motor-RNN note is being prepared for a preprint server; nothing has been
+submitted.
 
 ## Research
 
 | Project | What I did |
 | --- | --- |
 | **[SCRES](https://github.com/Thom-320/scres-ia)**<br>reinforcement learning · simulation | Supervised project: supply-chain simulation and Gymnasium/PPO experiments judged against a same-contract static comparator. The learned policy was ahead in only 2 of 10 checkpoint means and 2 of 60 held-out streams; the earlier advantage claim was withdrawn.<br>Start with the [same-contract verdict](https://github.com/Thom-320/scres-ia/blob/main/docs/TRACK_B_SAME_CONTRACT_CHALLENGE_VERDICT_2026-07-10.md). |
-| **[Motor-RNN connectivity](https://github.com/Thom-320/nma-motor-rnn-connectivity)**<br>computational neuroscience | Neuromatch team project, then my independent equal-plasticity control, which holds the number of trainable recurrent edges equal across densities. Under that control the density ordering from the team's primary run reversed: the error of the sparsest network minus the mean of the denser ones changed sign in 8 of 8 seeds (95% bootstrap interval −0.113 to −0.068; exploratory, one architecture).<br>Start with the [control note](https://github.com/Thom-320/nma-motor-rnn-connectivity/blob/main/docs/EQUAL_PLASTICITY_CONTROL.md). |
+| **[Motor-RNN connectivity](https://github.com/Thom-320/nma-motor-rnn-connectivity)**<br>computational neuroscience | Neuromatch team project, then my independent equal-plasticity control, which holds the number of trainable recurrent edges equal across densities. With all edges trainable, denser networks do better; with an equal trainable budget that advantage disappears (per-seed drop +0.231, 95% CI 0.193 to 0.267, positive in 16 of 16 seeds; it survives spectral-radius matching, random-subset budgets and N=400). One architecture, one task.<br>Start with the [robustness note](https://github.com/Thom-320/nma-motor-rnn-connectivity/blob/robustness-2026-10/paper/NOTE.md) (draft, not peer reviewed). |
 | **[Spectral analysis of cognitive labor](https://github.com/Thom-320/spectral-cognitive-labor)**<br>human coordination | My reanalysis of Andrade-Lotero and Goldstone's human-search experiment (the data belong to the original authors), with a past-only temporal audit. Predictive advantage is not established.<br>Start with the [temporal audit](https://github.com/Thom-320/spectral-cognitive-labor/blob/main/docs/TEMPORAL_REPAIR.md). |
 
 ## What did not hold up
 
 - **SCRES:** the PPO advantage over a strong same-contract static policy did not survive the comparison, so the earlier claim was withdrawn.
 - **Spectral:** early-prediction AUCs of 0.804 and 0.860 used overlapping time windows and are not validated. No predictive or spectral advantage is established.
-- **Motor-RNN:** the primary density ordering reversed under equal trainable edges (8 of 8 seeds; exploratory, one architecture; see the control note).
+- **Motor-RNN:** with 8 seeds I reported that the density ordering *reversed* under an equal trainable budget. With 16 seeds that reversal is small and not robust (−0.041, 95% CI −0.083 to +0.011); what holds is that the advantage disappears. See the [robustness note](https://github.com/Thom-320/nma-motor-rnn-connectivity/blob/robustness-2026-10/paper/NOTE.md).
 
 ## Software
 
@@ -50,8 +53,10 @@ manuscript is in preparation and has not been submitted.
 
 ## Coming (not yet public)
 
-- A short note on judge calibration.
-- A two-page reanalysis note on the spectral experiment.
+- The Motor-RNN robustness note as a preprint.
+- What measured anchors identify in METR's time horizons (preregistration drafted, not yet filed).
+- Decision stability of LLM judges: how often a pass/fail or ranking decision changes when the judge changes, on AI-safety audits (Petri) and tutoring feedback.
+- A report from the Apart Research collusion sprint (October 2026).
 
 ## Private work
 
@@ -67,3 +72,5 @@ method, then follow the documented test path. The existing evidence can be
 inspected without refitting any model.
 
 **Tools:** Python · PyTorch · NumPy/SciPy · NetworkX · SimPy · Gymnasium · C · SQL · FastAPI · Git · pytest
+
+**AI use:** I use AI coding assistants (Claude, Codex) for code and drafts. I check every reported number against saved outputs, and each repository states how it was built.
