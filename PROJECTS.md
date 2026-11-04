@@ -1,35 +1,22 @@
 # Project guide
 
-Choose a question, then inspect the evidence and implementation. These are
-research and educational projects, not claims of production readiness or a
-publication list. Repository ownership does not imply sole authorship.
+Pick a question, then read the evidence before you run anything. Each project links to the document that makes its main comparison.
 
-| Interest | Start with | Evidence to read before running code |
-| --- | --- | --- |
-| Reinforcement learning and policy comparison | [SCRES](https://github.com/Thom-320/scres-ia) | [Same-contract verdict](https://github.com/Thom-320/scres-ia/blob/main/docs/TRACK_B_SAME_CONTRACT_CHALLENGE_VERDICT_2026-07-10.md); [later Program Q status](https://github.com/Thom-320/scres-ia/blob/main/docs/PROGRAM_Q_CANONICAL_EVIDENCE_STATUS_2026-08-25.md). Different contracts must not be combined into one headline. |
-| Computational neuroscience and experimental controls | [Motor-RNN connectivity](https://github.com/Thom-320/nma-motor-rnn-connectivity) | [Paired design](https://github.com/Thom-320/nma-motor-rnn-connectivity/blob/main/docs/RESEARCH_OVERVIEW.md); [robustness note](https://github.com/Thom-320/nma-motor-rnn-connectivity/blob/robustness-2026-10/paper/NOTE.md). Sixteen network seeds, not hundreds of independent trials; the earlier 8-seed sign reversal did not hold up. |
-| Mathematical representations and human coordination | [Spectral cognitive labor](https://github.com/Thom-320/spectral-cognitive-labor) | [Model-free temporal repair](https://github.com/Thom-320/spectral-cognitive-labor/blob/main/docs/TEMPORAL_REPAIR.md). Reanalysis of the original authors' experiment; no established spectral predictive advantage. |
-| Systems programming | [HeliOS](https://github.com/Thom-320/HeliOS) | [Architecture](https://github.com/Thom-320/HeliOS/blob/main/docs/architecture.md); [smoke test](https://github.com/Thom-320/HeliOS/blob/main/scripts/smoke.sh). Collaborative educational kernel. |
-| Data engineering and interpretable review | [ContratIA Abierta](https://github.com/Thom-320/secop-risk-alerts-co) | [Model card](https://github.com/Thom-320/secop-risk-alerts-co/blob/main/docs/model-card.md); [validation scope](https://github.com/Thom-320/secop-risk-alerts-co/blob/main/docs/validation-summary.md). Automated checks are not human validation. |
-| Numerical dynamics and scientific communication | [ChaosLab](https://github.com/Thom-320/chaoslab-double-pendulum) | [Physics implementation](https://github.com/Thom-320/chaoslab-double-pendulum/blob/main/src/chaoslab/physics.py); [browser presentation](https://thom-320.github.io/chaoslab-double-pendulum/). Physics course project, not an ML result. |
+| Interest | Start with | Read first |
+|---|---|---|
+| RL and policy evaluation | [SCRES](https://github.com/Thom-320/scres-ia) | [Same-contract verdict](https://github.com/Thom-320/scres-ia/blob/main/docs/TRACK_B_SAME_CONTRACT_CHALLENGE_VERDICT_2026-07-10.md) · [Program Q status](https://github.com/Thom-320/scres-ia/blob/main/docs/PROGRAM_Q_CANONICAL_EVIDENCE_STATUS_2026-08-25.md) |
+| Computational neuroscience and experimental controls | [Motor-RNN connectivity](https://github.com/Thom-320/nma-motor-rnn-connectivity) | [Equal-plasticity control](https://github.com/Thom-320/nma-motor-rnn-connectivity/blob/main/docs/EQUAL_PLASTICITY_CONTROL.md) · [Robustness note (16 seeds)](https://github.com/Thom-320/nma-motor-rnn-connectivity/blob/robustness-2026-10/paper/NOTE.md) |
+| Representations of human coordination | [Spectral cognitive labor](https://github.com/Thom-320/spectral-cognitive-labor) | [Temporal audit](https://github.com/Thom-320/spectral-cognitive-labor/blob/main/docs/TEMPORAL_REPAIR.md) |
+| Data engineering and interpretable review | [ContratIA Abierta](https://github.com/Thom-320/secop-risk-alerts-co) | [Model card](https://github.com/Thom-320/secop-risk-alerts-co/blob/main/docs/model-card.md) · [Validation scope](https://github.com/Thom-320/secop-risk-alerts-co/blob/main/docs/validation-summary.md) |
+| Systems programming | [HeliOS](https://github.com/Thom-320/HeliOS) | [Architecture](https://github.com/Thom-320/HeliOS/blob/main/docs/architecture.md) · [Smoke test](https://github.com/Thom-320/HeliOS/blob/main/scripts/smoke.sh) |
+| Numerical dynamics | [ChaosLab](https://github.com/Thom-320/chaoslab-double-pendulum) | [Physics implementation](https://github.com/Thom-320/chaoslab-double-pendulum/blob/main/src/chaoslab/physics.py) · [Live demo](https://thom-320.github.io/chaoslab-double-pendulum/) |
 
-## Reading the repositories
+## Suggested routes
 
-### Routes through the evidence
+- **Evaluation methods:** SCRES (matched comparators) → Motor-RNN (capacity-controlled comparison) → Spectral (temporal leakage audit).
+- **Learning dynamics and NeuroAI:** Motor-RNN's NumPy FORCE/RLS implementation → ChaosLab → Spectral's invariant representations.
+- **Research software:** ContratIA (pipelines, APIs, traceable review) → HeliOS (collaborative systems code).
 
-- **Evaluation of learned policies:** start with SCRES for same-contract comparisons, then Motor-RNN for a controlled comparison and Spectral for temporal integrity. These demonstrate transferable evaluation methods, not prior LLM alignment or formal-verification results. A private retrieval-augmented support prototype is described in the CV.
-- **Learning dynamics and NeuroAI:** start with Motor-RNN's NumPy/FORCE/RLS implementation and equal-plasticity control; use ChaosLab for numerical dynamics and Spectral for invariant representations.
-- **Mathematical and scientific ML:** inspect Spectral's projectors and temporal audit, followed by ChaosLab's integration diagnostics. Numerical analysis coursework is described in the CV; it is not an optimisation-theory paper.
-- **Research software:** inspect HeliOS for collaborative systems code and runtime checks, and ContratIA for data pipelines, APIs and traceable review.
+**Coming next:** decision stability of LLM judges (Petri alignment audits, tutoring feedback) and a validity check of METR's time horizons. Both are in progress and will be linked here when released.
 
-### Inspection before execution
-
-1. Read the research question and the stated limitations.
-2. Inspect a saved result and its method, not only a preview image or CI badge.
-3. Follow the documented test or viewing path before launching training or rebuilding datasets.
-
-No fresh model fitting is needed to inspect the existing evidence. Computational
-checks establish what they test; they do not by themselves establish novelty,
-causality, scientific validity or deployment safety.
-
-CV: updated version coming · [Back to profile](README.md)
+[Back to profile](README.md)

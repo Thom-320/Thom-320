@@ -1,76 +1,37 @@
-<h1 align="center">Thomas Chisica Londoño</h1>
+# Thomas Chisica Londoño
 
-<p align="center">
-  Applied Mathematics &amp; Computer Science · Universidad del Rosario · Bogotá, Colombia
-</p>
+Applied Mathematics & Computer Science at **Universidad del Rosario**, Bogotá · minors in Advanced Mathematics and AI.
 
-<p align="center">
-  <a href="PROJECTS.md">Project guide</a> ·
-  Updated CV: coming ·
-  <a href="mailto:thomas.chisica@urosario.edu.co">Email</a>
-</p>
+I work on **evaluation**: does a result measure what it claims to measure?
+In reinforcement learning, neural network models and human-behaviour data,
+I build the controls that test a comparison (matched baselines,
+equal-capacity comparisons, past-only features) and report what the control shows.
+I now apply the same tests to the automated judges and monitors used to evaluate
+LLMs: how often does a pass/fail or ranking decision change when the judge changes?
 
-## What I work on
+[Project guide](PROJECTS.md) · [thomas.chisica@urosario.edu.co](mailto:thomas.chisica@urosario.edu.co) · CV on request
 
-I build simulations and learning experiments, then test what their comparisons
-actually establish: strong baselines, held-out evaluation and explicit controls.
+## Now
 
-My research question is whether automated judges and monitors measure what they
-claim to measure. A pattern I keep running into: when a system is only partly
-observed, absolute levels are often not identified, while comparisons between
-systems can still be. Public work so far is on reinforcement learning, recurrent
-networks and human-coordination data. I am now applying the same tests to LLM
-judges and monitors (AI-safety audits, tutoring feedback) and to the METR
-time-horizon measurements. That work is in progress and not yet public.
+- **Decision stability of LLM judges.** A small Python package that measures how often a pass/fail or ranking decision flips when the judge, the rubric wording or the resample changes. Pilots on Anthropic's Petri alignment audits (public CC-BY corpus) and on tutoring feedback. In progress, to be released with its first report.
+- **What METR's time horizons depend on.** A pilot that refits METR's Time Horizon 1.1 with METR's own code and asks how much the horizons move between measured human baselines and researcher estimates. In progress.
+- **Collective foraging and fairness:** an online behavioural experiment (PsyNet) with Edgar Andrade-Lotero. In development.
 
-**Status:** expected graduation 2028 (date to confirm). No publications yet. A
-short Motor-RNN note is being prepared for a preprint server; nothing has been
-submitted.
+## Evaluation work: start here
 
-## Research
-
-| Project | What I did |
-| --- | --- |
-| **[SCRES](https://github.com/Thom-320/scres-ia)**<br>reinforcement learning · simulation | Supervised project: supply-chain simulation and Gymnasium/PPO experiments judged against a same-contract static comparator. The learned policy was ahead in only 2 of 10 checkpoint means and 2 of 60 held-out streams; the earlier advantage claim was withdrawn.<br>Start with the [same-contract verdict](https://github.com/Thom-320/scres-ia/blob/main/docs/TRACK_B_SAME_CONTRACT_CHALLENGE_VERDICT_2026-07-10.md). |
-| **[Motor-RNN connectivity](https://github.com/Thom-320/nma-motor-rnn-connectivity)**<br>computational neuroscience | Neuromatch team project, then my independent equal-plasticity control, which holds the number of trainable recurrent edges equal across densities. With all edges trainable, denser networks do better; with an equal trainable budget that advantage disappears (per-seed drop +0.231, 95% CI 0.193 to 0.267, positive in 16 of 16 seeds; it survives spectral-radius matching, random-subset budgets and N=400). One architecture, one task.<br>Start with the [robustness note](https://github.com/Thom-320/nma-motor-rnn-connectivity/blob/robustness-2026-10/paper/NOTE.md) (draft, not peer reviewed). |
-| **[Spectral analysis of cognitive labor](https://github.com/Thom-320/spectral-cognitive-labor)**<br>human coordination | My reanalysis of Andrade-Lotero and Goldstone's human-search experiment (the data belong to the original authors), with a past-only temporal audit. Predictive advantage is not established.<br>Start with the [temporal audit](https://github.com/Thom-320/spectral-cognitive-labor/blob/main/docs/TEMPORAL_REPAIR.md). |
-
-## What did not hold up
-
-- **SCRES:** the PPO advantage over a strong same-contract static policy did not survive the comparison, so the earlier claim was withdrawn.
-- **Spectral:** early-prediction AUCs of 0.804 and 0.860 used overlapping time windows and are not validated. No predictive or spectral advantage is established.
-- **Motor-RNN:** with 8 seeds I reported that the density ordering *reversed* under an equal trainable budget. With 16 seeds that reversal is small and not robust (−0.041, 95% CI −0.083 to +0.011); what holds is that the advantage disappears. See the [robustness note](https://github.com/Thom-320/nma-motor-rnn-connectivity/blob/robustness-2026-10/paper/NOTE.md).
+| Project | What I built | What the control showed |
+|---|---|---|
+| [**SCRES**](https://github.com/Thom-320/scres-ia): RL for supply-chain resilience (supervised project) | SimPy + Gymnasium simulator, PPO pipeline, and a same-contract comparator that holds constraints fixed across policies | Against a strong static policy under the same contract, the static policy does slightly better than PPO (95% CI below zero); PPO leads in only 2 of 10 checkpoints and 2 of 60 held-out streams. [Verdict](https://github.com/Thom-320/scres-ia/blob/main/docs/TRACK_B_SAME_CONTRACT_CHALLENGE_VERDICT_2026-07-10.md) |
+| [**Motor-RNN connectivity**](https://github.com/Thom-320/nma-motor-rnn-connectivity): Neuromatch Computational Neuroscience | Team FORCE/RLS project, then my independent equal-plasticity control and a 16-seed robustness study | Denser networks do better only because they have more trainable connections. With an equal trainable budget the advantage drops by 0.231 (95% CI 0.193 to 0.267, all 16 seeds), and this holds under spectral-radius matching, random subsets and N = 400. [Robustness note](https://github.com/Thom-320/nma-motor-rnn-connectivity/blob/robustness-2026-10/paper/NOTE.md) (draft) |
+| [**Spectral analysis of cognitive labor**](https://github.com/Thom-320/spectral-cognitive-labor): reanalysis of Andrade-Lotero & Goldstone | Spectral vs. coordinate representations of collective search; a temporal audit that rebuilds past-only features for 45 dyads | Found overlapping time windows in an earlier early-prediction pipeline and rebuilt it without them. [Temporal audit](https://github.com/Thom-320/spectral-cognitive-labor/blob/main/docs/TEMPORAL_REPAIR.md) |
 
 ## Software
 
-- **[HeliOS](https://github.com/Thom-320/HeliOS)**: a collaborative educational RISC-V kernel in C. I am a contributor, not the sole author. Architecture notes and QEMU smoke tests; smoke tests are not formal verification.
-- **[ContratIA Abierta](https://github.com/Thom-320/secop-risk-alerts-co)**: open-procurement data pipelines, FastAPI services and traceable signals for human review, not automated allegations. Human validation is still pending.
-- **[ChaosLab](https://github.com/Thom-320/chaoslab-double-pendulum)**: double-pendulum dynamics with numerical checks and an interactive presentation. A physics course project, not an ML result.
+- [**ContratIA Abierta**](https://github.com/Thom-320/secop-risk-alerts-co): Colombian public-procurement pipelines, FastAPI services and traceable risk signals for human review.
+- [**HeliOS**](https://github.com/Thom-320/HeliOS): a collaborative educational RISC-V kernel in C, with QEMU smoke tests.
+- [**ChaosLab**](https://github.com/Thom-320/chaoslab-double-pendulum): double-pendulum dynamics with numerical checks and an [interactive explainer](https://thom-320.github.io/chaoslab-double-pendulum/).
+- Contributed the `ForagersEnv.step()` simulation pipeline to [another group's RL repository](https://github.com/EAndrade-Lotero/foragers_and_manager_sim_RL/pull/1) (merged).
 
-## Outside my repositories
+**Tools:** Python, PyTorch, NumPy/SciPy, Gymnasium, SimPy, NetworkX, R, C, SQL, FastAPI, pytest, Git.
 
-- Merged pull request: [ForagersEnv.step() simulation pipeline](https://github.com/EAndrade-Lotero/foragers_and_manager_sim_RL/pull/1), in another group's repository (merged 2026-02-28).
-
-## Coming (not yet public)
-
-- The Motor-RNN robustness note as a preprint.
-- What measured anchors identify in METR's time horizons (preregistration drafted, not yet filed).
-- Decision stability of LLM judges: how often a pass/fail or ranking decision changes when the judge changes, on AI-safety audits (Petri) and tutoring feedback.
-- A report from the Apart Research collusion sprint (October 2026).
-
-## Private work
-
-Described in the CV and not published: a retrieval-augmented support prototype
-with heuristic answer/escalation routing (synthetic data); numerical-analysis
-coursework; and a computational audit of a marmot social-network model, done
-with a collaborator whose name is withheld until they agree.
-
-## How to read my repositories
-
-Read the question and the stated limitations, inspect a saved result and its
-method, then follow the documented test path. The existing evidence can be
-inspected without refitting any model.
-
-**Tools:** Python · PyTorch · NumPy/SciPy · NetworkX · SimPy · Gymnasium · C · SQL · FastAPI · Git · pytest
-
-**AI use:** I use AI coding assistants (Claude, Codex) for code and drafts. I check every reported number against saved outputs, and each repository states how it was built.
+I use AI coding assistants (Claude, Codex) and check every reported number against saved outputs.
