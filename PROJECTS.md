@@ -11,6 +11,15 @@ Pick a question, then read the evidence before you run anything. Each project li
 | Systems programming | [HeliOS](https://github.com/Thom-320/HeliOS) | [Architecture](https://github.com/Thom-320/HeliOS/blob/main/docs/architecture.md) · [Smoke test](https://github.com/Thom-320/HeliOS/blob/main/scripts/smoke.sh) |
 | Numerical dynamics | [ChaosLab](https://github.com/Thom-320/chaoslab-double-pendulum) | [Physics implementation](https://github.com/Thom-320/chaoslab-double-pendulum/blob/main/src/chaoslab/physics.py) · [Live demo](https://thom-320.github.io/chaoslab-double-pendulum/) |
 
+## Software
+
+- [**ContratIA Abierta**](https://github.com/Thom-320/secop-risk-alerts-co): Colombian public-procurement pipelines, FastAPI services and traceable risk signals for human review.
+- [**HeliOS**](https://github.com/Thom-320/HeliOS): a collaborative educational RISC-V kernel in C, with QEMU smoke tests.
+- [**ChaosLab**](https://github.com/Thom-320/chaoslab-double-pendulum): double-pendulum dynamics with numerical checks and an [interactive explainer](https://thom-320.github.io/chaoslab-double-pendulum/).
+- [**Foragers & Manager simulation**](https://github.com/EAndrade-Lotero/foragers_and_manager_sim_RL/pull/1): the Gymnasium `step()` pipeline (simulation, reward, 30 tests) for the agent-based version of the foraging experiment, in Edgar Andrade-Lotero's repository.
+
+**Tools:** Python, PyTorch, NumPy/SciPy, Gymnasium, SimPy, NetworkX, R, C, SQL, FastAPI, pytest, Git.
+
 ## Suggested routes
 
 - **Evaluation methods:** SCRES (matched comparators) → Motor-RNN (capacity-controlled comparison) → Spectral (temporal leakage audit).
