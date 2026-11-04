@@ -6,7 +6,7 @@ BSc in Applied Mathematics & Computer Science at **Universidad del Rosario**, Bo
 
 ## Now
 
-- **Decision stability of LLM judges:** how often a pass/fail or ranking decision flips when the judge, the rubric or the resample changes, on Anthropic's Petri alignment audits and on tutoring feedback. In progress.
+- [**Decision stability of LLM judges**](https://github.com/Thom-320/judge-decision-stability): how often a pass/fail or ranking decision flips when the judge, the rubric or the resample changes, on Anthropic's Petri alignment audits and on tutoring feedback. The analysis package is public; the pilot reports come next.
 - **METR time horizons:** how much the horizons move between measured human baselines and researcher estimates, refit with METR's own code. In progress.
 - [**Collective foraging and fairness**](https://github.com/EAndrade-Lotero/foraging_trucks): a two-player PsyNet experiment with Edgar Andrade-Lotero; I build most of the participant side (tutorials, game board, contract screens). In development.
 
