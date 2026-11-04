@@ -26,6 +26,6 @@ Pick a question, then read the evidence before you run anything. Each project li
 - **Learning dynamics and NeuroAI:** Motor-RNN's NumPy FORCE/RLS implementation → ChaosLab → Spectral's invariant representations.
 - **Research software:** ContratIA (pipelines, APIs, traceable review) → HeliOS (collaborative systems code).
 
-**LLM evaluation:** [judge-decision-stability](https://github.com/Thom-320/judge-decision-stability) (φ, G/D-study, ICC, paired bootstrap; 39 tests). Coming next: the Petri pilot report and a validity check of METR's time horizons.
+**LLM evaluation:** [judge-decision-stability](https://github.com/Thom-320/judge-decision-stability) (φ, G/D-study, ICC, paired bootstrap; 39 tests) → [petri-judge-stability](https://github.com/Thom-320/petri-judge-stability) (the Petri pilot, batch runners for the follow-up and its pre-registration draft). Coming next: a validity check of METR's time horizons.
 
 [Back to profile](README.md)
