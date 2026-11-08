@@ -2,7 +2,7 @@
 
 BSc in Applied Mathematics & Computer Science at **Universidad del Rosario**, Bogotá (2024–2028 · GPA 4.11/5.00 · full-tuition merit scholarship). I work on **evaluation**: does a result measure what it claims to measure? I build the controls that test a comparison (matched baselines, equal-capacity comparisons, past-only features), and I now apply them to the LLM judges and monitors used to evaluate AI systems.
 
-[Project guide](PROJECTS.md) · [thomas.chisica@urosario.edu.co](mailto:thomas.chisica@urosario.edu.co) · CV on request
+[Project guide](PROJECTS.md) · [thomas.chisica@urosario.edu.co](mailto:thomas.chisica@urosario.edu.co) · [CV (PDF)](Thomas_Chisica_CV.pdf)
 
 ## Now
 
