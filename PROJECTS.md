@@ -4,6 +4,8 @@ Pick a question, then read the evidence before you run anything. Each project li
 
 | Interest | Start with | Read first |
 |---|---|---|
+| AI evaluation and LLM judges | [Petri judge stability](https://github.com/Thom-320/petri-judge-stability) | [Pilot findings](https://github.com/Thom-320/petri-judge-stability#what-the-pilot-found-and-why-it-is-weak-evidence) · [Pre-registration draft](https://github.com/Thom-320/petri-judge-stability/blob/main/docs/PREREGISTRATION.md) |
+| Measurement validity of AI benchmarks | [METR horizon anchors](https://github.com/Thom-320/metr-horizon-anchors) | [Pilot memo](https://github.com/Thom-320/metr-horizon-anchors/blob/main/PILOT-MEMO.md) · [Anchor-split figure](https://github.com/Thom-320/metr-horizon-anchors/blob/main/figures/fig2_anchor_split.png) |
 | RL and policy evaluation | [SCRES](https://github.com/Thom-320/scres-ia) | [Same-contract verdict](https://github.com/Thom-320/scres-ia/blob/main/docs/TRACK_B_SAME_CONTRACT_CHALLENGE_VERDICT_2026-07-10.md) · [Program Q status](https://github.com/Thom-320/scres-ia/blob/main/docs/PROGRAM_Q_CANONICAL_EVIDENCE_STATUS_2026-08-25.md) |
 | Computational neuroscience and experimental controls | [Motor-RNN connectivity](https://github.com/Thom-320/nma-motor-rnn-connectivity) | [Equal-plasticity control](https://github.com/Thom-320/nma-motor-rnn-connectivity/blob/main/docs/EQUAL_PLASTICITY_CONTROL.md) · [Robustness note (16 seeds)](https://github.com/Thom-320/nma-motor-rnn-connectivity/blob/robustness-2026-10/paper/NOTE.md) |
 | Representations of human coordination | [Spectral cognitive labor](https://github.com/Thom-320/spectral-cognitive-labor) | [Temporal audit](https://github.com/Thom-320/spectral-cognitive-labor/blob/main/docs/TEMPORAL_REPAIR.md) |
@@ -22,10 +24,9 @@ Pick a question, then read the evidence before you run anything. Each project li
 
 ## Suggested routes
 
+- **AI evaluation:** [judge-decision-stability](https://github.com/Thom-320/judge-decision-stability) (φ, G/D-study, ICC, paired bootstrap; 39 tests) → [petri-judge-stability](https://github.com/Thom-320/petri-judge-stability) (the Petri pilot, batch runners for the follow-up and its pre-registration draft) → [metr-horizon-anchors](https://github.com/Thom-320/metr-horizon-anchors) (exact replication of METR's Time Horizon 1.1, then a refit on measured human times only).
 - **Evaluation methods:** SCRES (matched comparators) → Motor-RNN (capacity-controlled comparison) → Spectral (temporal leakage audit).
 - **Learning dynamics and NeuroAI:** Motor-RNN's NumPy FORCE/RLS implementation → ChaosLab → Spectral's invariant representations.
 - **Research software:** ContratIA (pipelines, APIs, traceable review) → HeliOS (collaborative systems code).
-
-**LLM evaluation:** [judge-decision-stability](https://github.com/Thom-320/judge-decision-stability) (φ, G/D-study, ICC, paired bootstrap; 39 tests) → [petri-judge-stability](https://github.com/Thom-320/petri-judge-stability) (the Petri pilot, batch runners for the follow-up and its pre-registration draft). Coming next: a validity check of METR's time horizons.
 
 [Back to profile](README.md)
